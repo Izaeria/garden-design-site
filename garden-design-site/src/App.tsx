@@ -1,5 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -8,13 +10,19 @@ import ServicesPage from "./pages/ServicesPage";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/om" element={<AboutPage />} />
-      <Route path="/projekt" element={<ProjectsPage />} />
-      <Route path="/kontakt" element={<ContactPage />} />
-      <Route path="/tjanster" element={<ServicesPage />} />
-    </Routes>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/om" element={<AboutPage />} />
+        <Route path="/projekt" element={<ProjectsPage />} />
+        <Route path="/kontakt" element={<ContactPage />} />
+        <Route path="/tjanster" element={<ServicesPage />} />
+      </Routes>
+
+      <Footer />
+    </>
   );
 }
 

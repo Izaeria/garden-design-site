@@ -1,14 +1,27 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav>
       <h2>Garden Studio</h2>
       <ul>
-        <li>Hem</li>
-        <li>Om Mig</li>
-        <li>Tjänster</li>
-        <li>Projekt</li>
-        <li>Inspiration</li>
-        <li>Kontakt</li>
+        <li>
+          <NavLink to="/" end>
+            Hem
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/om">Om mig</NavLink>
+        </li>
+        <li>
+          <NavLink to="/tjanster">Tjänster</NavLink>
+        </li>
+        <li>
+          <NavLink to="/projekt">Projekt</NavLink>
+        </li>
+        <li>
+          <NavLink to="/kontakt">Kontakt</NavLink>
+        </li>
       </ul>
       <button>Kontakta mig</button>
     </nav>
