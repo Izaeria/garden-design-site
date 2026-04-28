@@ -3,7 +3,7 @@ function Hero() {
     <section>
       <h1>Trädgårdsdesign med fokus på hållbarhet</h1>
       <p>Vi skapar harmoniska och funktionella utemiljöer</p>
-      <button>Kontakta mig</button>
+      <button>Se projekt</button>
     </section>
   );
 }
