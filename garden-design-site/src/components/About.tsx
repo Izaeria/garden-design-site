@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <section id="about">
@@ -14,7 +16,9 @@ function About() {
         quis porttitor. Ut fermentum malesuada sem, at mollis est vehicula
         vitae.{" "}
       </p>
-      <button>Läs mer om mig</button>
+      <Link to="/om" className="button">
+        Läs mer om mig
+      </Link>
     </section>
   );
 }
