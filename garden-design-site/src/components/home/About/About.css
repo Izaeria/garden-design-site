@@ -1,0 +1,95 @@
+.about {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  background-color: #faf8f2;
+  margin: 0;
+  padding: 0;
+}
+
+.about-image-wrapper {
+  padding: 0 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  margin: 0 2rem;
+}
+
+.profile-image {
+  display: block;
+  max-height: 30dvh;
+  width: auto;
+  border-radius: 12px;
+}
+
+.about-label {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Cantarell", sans-serif;
+  padding-top: 2rem;
+}
+
+.about-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.about-text {
+  font-family: "Cantarell", sans-serif;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.9rem 0rem;
+  color: #7c935d;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Cantarell", sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.about-button:hover {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 700px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    padding: 2rem 0 2rem;
+  }
+
+  .about-image-wrapper {
+    padding-left: 4rem;
+    align-self: center;
+    padding-top: 1rem;
+  }
+
+  .profile-image {
+    max-height: 300px;
+    width: auto;
+    padding: 0;
+    border-radius: 6%;
+  }
+
+  .about-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    margin-top: 1rem;
+  }
+
+  .about-content {
+    align-self: start;
+    margin-right: 4rem;
+  }
+}
