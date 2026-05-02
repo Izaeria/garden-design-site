@@ -104,8 +104,9 @@
 
 @media (min-width: 1024px) {
   .hero {
-    min-height: 70vh;
-    padding: 1rem 2rem;
+    min-height: 50vh;
+    max-height: 800px;
+    padding: 3rem 2rem;
     align-items: center;
   }
 

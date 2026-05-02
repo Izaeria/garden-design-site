@@ -56,8 +56,13 @@
   text-decoration: none;
   font-size: 0.95rem;
   padding: 1rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
+.navbar-links a:hover {
+  transform: scale(1.05);
+}
 .navbar-links a.active {
   font-weight: 800;
 }
@@ -84,6 +89,7 @@
 .navbar-cta-button:hover {
   background: #ffffff;
   color: #7c935d;
+  transform: scale(0.97);
 }
 
 .navbar-cta-button:active {
@@ -106,15 +112,18 @@
   .navbar-links {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 4.5rem;
     flex-direction: row;
   }
-
+  .navbar-links a {
+    padding: 0.25rem 0; /* bara lite vertikalt */
+  }
   .navbar-cta {
     margin-left: 1rem;
   }
 
   .navbar-cta-button {
+    align-self: flex-end;
     position: static;
     white-space: nowrap;
   }
