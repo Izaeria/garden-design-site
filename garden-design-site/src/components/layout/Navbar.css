@@ -127,5 +127,6 @@
     align-self: flex-end;
     position: static;
     white-space: nowrap;
+    font-size: 1.2rem;
   }
 }
