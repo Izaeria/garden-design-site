@@ -52,15 +52,15 @@
 }
 
 .navbar-links a {
-  color: #243528;
+  color: #3a442c;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   padding: 1rem;
   display: inline-block;
-  transition: transform 0.2s ease;
 }
 
 .navbar-links a:hover {
+  transition: transform 0.2s ease;
   transform: scale(1.05);
 }
 .navbar-links a.active {
@@ -116,7 +116,8 @@
     flex-direction: row;
   }
   .navbar-links a {
-    padding: 0.25rem 0; /* bara lite vertikalt */
+    padding: 0.25rem 0;
+    font-size: 1.2rem;
   }
   .navbar-cta {
     margin-left: 1rem;
