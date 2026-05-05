@@ -80,13 +80,26 @@
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 5rem;
+    margin: 0 10rem;
+    gap: 2rem;
   }
 
   .projects-title {
     margin: 2rem 0 2rem;
+    font-size: 1.5rem;
   }
 
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .card-link {
+    font-size: 1.2rem;
+  }
   .card-image {
     height: 300px;
   }
