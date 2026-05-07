@@ -9,7 +9,7 @@ interface CardProps {
   url?: string;
 }
 
-function ProjectCard({
+function Card({
   imgUrl,
   title,
   subtitle,
@@ -33,4 +33,4 @@ function ProjectCard({
     </div>
   );
 }
-export default ProjectCard;
+export default Card;
