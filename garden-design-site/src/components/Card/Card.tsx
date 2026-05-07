@@ -5,7 +5,8 @@ interface CardProps {
   title: string;
   subtitle: string;
   description?: string;
-  projectUrl: string;
+  linkText?: string;
+  url?: string;
 }
 
 function ProjectCard({
@@ -13,7 +14,8 @@ function ProjectCard({
   title,
   subtitle,
   description,
-  projectUrl,
+  linkText,
+  url,
 }: CardProps) {
   return (
     <div className="card">
@@ -22,9 +24,11 @@ function ProjectCard({
         <h2 className="card-title">{title}</h2>
         <h3 className="card-subtitle">{subtitle}</h3>
         <p className="card-description">{description}</p>
-        <Link className="card-link" to={projectUrl}>
-          Se projekt →
-        </Link>
+        {url && linkText && (
+          <Link className="card-link" to={url}>
+            {linkText}
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -15,28 +15,32 @@ function Projects() {
           imgUrl={project1}
           title="Lummig trädgård med fontän"
           subtitle="Villa, Svedala"
-          projectUrl="/projekt"
+          url="/projekt"
+          linkText="  Se projekt →"
         />
 
         <ProjectCard
           imgUrl={project2}
           title="Skissförslag"
           subtitle="Skissförslag 'Woodland', skolarbete"
-          projectUrl="/projekt"
+          url="/projekt"
+          linkText="  Se projekt →"
         />
 
         <ProjectCard
           imgUrl={project3}
           title="Skissförslag"
           subtitle="Skissförslag, skolarbete"
-          projectUrl="/projekt"
+          url="/projekt"
+          linkText="  Se projekt →"
         />
 
         <ProjectCard
           imgUrl={project5}
           title="Grön Trädgård med valv"
           subtitle="Villa, Svedala"
-          projectUrl="/projekt"
+          url="/projekt"
+          linkText="  Se projekt →"
         />
       </div>
     </section>
