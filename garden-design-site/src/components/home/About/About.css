@@ -1,6 +1,6 @@
 .about {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   position: relative;
   background-color: #faf8f2;
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 .about-image-wrapper {
-  padding: 0 2rem 1rem;
+  padding: 0 0 0 2rem;
   display: flex;
   justify-content: center;
 }
@@ -22,6 +22,8 @@
   max-height: 30dvh;
   width: auto;
   border-radius: 12px;
+  margin: 2rem 1.5rem 0rem 0rem;
+  float: left;
 }
 
 .about-label {
@@ -37,7 +39,11 @@
   font-size: 30px;
 }
 
-.about-text {
+.about-text-top {
+  font-family: "Cantarell", sans-serif;
+}
+
+.about-text-bottom {
   font-family: "Cantarell", sans-serif;
 }
 
@@ -62,17 +68,14 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (min-width: 700px) {
+.about-leaf-image {
+  display: none;
+}
+@media (min-width: 768px) {
   .about {
     display: grid;
-    grid-template-columns: 1fr 3.5fr;
+    grid-template-columns: 10fr 0.5fr;
     padding: 2rem 0 2rem;
-  }
-
-  .about-image-wrapper {
-    padding-left: 4rem;
-    align-self: center;
-    padding-top: 1rem;
   }
 
   .profile-image {
@@ -90,6 +93,29 @@
 
   .about-content {
     align-self: start;
-    margin-right: 4rem;
+  }
+
+  .about-leaf-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    display: grid;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .about-content {
+    margin: 0 0rem 0 5rem;
+  }
+
+  .about-leaf-image {
+    display: block;
+    max-height: 300px;
+    width: auto;
+    padding: 0;
+    margin-top: 1.5rem;
+    border-radius: 6%;
   }
 }
