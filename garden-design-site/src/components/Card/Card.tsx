@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 interface CardProps {
   imgUrl?: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   description?: string;
   linkText?: string;
   url?: string;
