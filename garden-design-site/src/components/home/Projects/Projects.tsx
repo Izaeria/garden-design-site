@@ -1,5 +1,5 @@
 import "./Projects.css";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../../Card/Card";
 import project1 from "../../../assets/ProjectsImages/project1.jpeg";
 import project2 from "../../../assets/ProjectsImages/project2.jpeg";
 import project3 from "../../../assets/ProjectsImages/project3.jpeg";
