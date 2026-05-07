@@ -18,12 +18,14 @@ function ProjectCard({
   return (
     <div className="card">
       <img src={imgUrl} className="card-image" alt="" />
-      <h2 className="card-title">{title}</h2>
-      <h3 className="card-subtitle">{subtitle}</h3>
-      <p className="card-description">{description}</p>
-      <Link className="card-link" to={projectUrl}>
-        Se projekt →
-      </Link>
+      <div className="card-content">
+        <h2 className="card-title">{title}</h2>
+        <h3 className="card-subtitle">{subtitle}</h3>
+        <p className="card-description">{description}</p>
+        <Link className="card-link" to={projectUrl}>
+          Se projekt →
+        </Link>
+      </div>
     </div>
   );
 }

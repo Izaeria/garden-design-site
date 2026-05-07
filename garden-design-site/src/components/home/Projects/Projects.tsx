@@ -7,7 +7,7 @@ import project5 from "../../../assets/ProjectsImages/project5.jpeg";
 
 function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="projects">
       <h3 className="projects-title">Utvalda Projekt</h3>
 
       <div className="projects-grid">

@@ -1,64 +1,82 @@
+.projects {
+  background-color: #faf8f2;
+}
+
 .projects-wrapper {
-  background-color: #fff;
   padding: 4rem 1.5rem;
 }
 
 .projects-title {
-  text-align: center;
-  margin: 1rem 0 1rem;
+  text-align: start;
+  margin: 0 1rem 1.5rem;
+  padding-top: 2rem;
   font-family: "Cantarell", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
 .projects-grid {
-  display: grid;
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .card {
-  background-color: #faf8f2;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  text-align: left;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+  margin: 0 1rem;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
-  display: block;
   width: 100%;
-  height: 220px;
+  height: 150px;
   object-fit: cover;
 }
 
+.card-content {
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .card-title {
-  margin: 1rem 1rem 0.25rem;
+  margin: 0 0 0.3rem;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .card-subtitle {
-  margin: 0 1rem 1rem;
+  margin: 0;
   font-family: "Cantarell", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-size: 0.9rem;
   color: rgb(117, 112, 112);
 }
 
 .card-description {
-  margin: 0 1rem 1rem;
+  margin-top: 0.5rem;
   font-family: "Cantarell", sans-serif;
+  font-size: 0.85rem;
+  color: rgb(117, 112, 112);
 }
 
 .card-link {
-  display: inline-block;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
   color: #3a442c;
   text-decoration: none;
   font-family: "Cantarell", sans-serif;
@@ -67,40 +85,66 @@
 }
 
 .card-link:hover {
-  transition: transform 0.2s ease;
   transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
   .projects-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .projects-title {
+    text-align: center;
+  }
+
+  .card {
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 0%;
+  }
+
+  .card-image {
+    height: 220px;
+  }
+
+  .card-content {
+    padding: 1.2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 0 10rem;
     gap: 2rem;
+    background-color: #faf8f2;
   }
 
   .projects-title {
-    margin: 2rem 0 2rem;
+    margin: 2rem 0;
     font-size: 1.5rem;
   }
 
+  .card {
+    display: block;
+  }
+
   .card-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .card-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .card-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
+
   .card-image {
-    height: 300px;
+    width: 100%;
+    height: 220px;
   }
 }
