@@ -12,35 +12,39 @@ function Projects() {
 
       <div className="projects-grid">
         <Card
+          className="projects-card"
           imgUrl={project1}
           title="Lummig trädgård med fontän"
           subtitle="Villa, Svedala"
           url="/projekt"
-          linkText="  Se projekt →"
+          linkText="Se projekt →"
         />
 
         <Card
+          className="projects-card"
           imgUrl={project2}
           title="Skissförslag"
           subtitle="Skissförslag 'Woodland', skolarbete"
           url="/projekt"
-          linkText="  Se projekt →"
+          linkText="Se projekt →"
         />
 
         <Card
+          className="projects-card"
           imgUrl={project3}
           title="Skissförslag"
           subtitle="Skissförslag, skolarbete"
           url="/projekt"
-          linkText="  Se projekt →"
+          linkText="Se projekt →"
         />
 
         <Card
+          className="projects-card"
           imgUrl={project5}
           title="Grön Trädgård med valv"
           subtitle="Villa, Svedala"
           url="/projekt"
-          linkText="  Se projekt →"
+          linkText="Se projekt →"
         />
       </div>
     </section>

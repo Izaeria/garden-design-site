@@ -21,7 +21,7 @@
   gap: 1rem;
 }
 
-.card {
+.projects-card {
   display: grid;
   grid-template-columns: 40% 1fr;
   align-items: stretch;
@@ -36,45 +36,44 @@
   margin: 0 1rem;
 }
 
-.card:hover {
+.projects-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
-
-.card-image {
+.projects-card .card-image {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
 
-.card-content {
+.projects-card .card-content {
   padding: 0.8rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card-title {
+.projects-card .card-title {
   margin: 0 0 0.3rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
 }
 
-.card-subtitle {
+.projects-card .card-subtitle {
   margin: 0;
   font-family: "Cantarell", sans-serif;
   font-size: 0.9rem;
   color: rgb(117, 112, 112);
 }
 
-.card-description {
+.projects-card .card-description {
   margin-top: 0.5rem;
   font-family: "Cantarell", sans-serif;
   font-size: 0.85rem;
   color: rgb(117, 112, 112);
 }
 
-.card-link {
+.projects-card .card-link {
   margin-top: 0.5rem;
   font-size: 0.8rem;
   color: #3a442c;
@@ -84,7 +83,7 @@
   font-weight: 600;
 }
 
-.card-link:hover {
+.projects-card .card-link:hover {
   transform: scale(1.05);
 }
 
@@ -92,16 +91,18 @@
   .projects {
     background-color: #fff;
   }
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+
   .projects-title {
     text-align: center;
   }
 
-  .card {
+  .projects-card {
     display: block;
     text-align: center;
     border: none;
@@ -109,11 +110,11 @@
     background-color: #faf8f2;
   }
 
-  .card-image {
+  .projects-card .card-image {
     height: 220px;
   }
 
-  .card-content {
+  .projects-card .card-content {
     padding: 1.2rem;
   }
 }
@@ -130,23 +131,23 @@
     font-size: 1.5rem;
   }
 
-  .card {
+  .projects-card {
     display: block;
   }
 
-  .card-title {
+  .projects-card .card-title {
     font-size: 1.6rem;
   }
 
-  .card-subtitle {
+  .projects-card .card-subtitle {
     font-size: 1.1rem;
   }
 
-  .card-link {
+  .projects-card .card-link {
     font-size: 1rem;
   }
 
-  .card-image {
+  .projects-card .card-image {
     width: 100%;
     height: 220px;
   }

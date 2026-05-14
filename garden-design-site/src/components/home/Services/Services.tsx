@@ -8,9 +8,10 @@ import questionMark from "../../../assets/ServicesImages/question-mark.svg";
 function Services() {
   return (
     <section id="services" className="services">
-      <h3>Tjänster</h3>
-      <h2>Detta kan jag hjälpa dig med</h2>
+      <h3 className="services-title">Tjänster</h3>
+      <h2 className="services-subtitle">Detta kan jag hjälpa dig med</h2>
       <Card
+        className="services-card"
         imgUrl={tree}
         title="Trädgårdsdesign"
         description="  Lorem ipsum dolor sit amet, consectetur adipiscing eh4t. Donec
@@ -18,6 +19,7 @@ function Services() {
             eh4t non imperdiet. "
       />
       <Card
+        className="services-card"
         imgUrl={pottedPlant}
         title="Planteringsplaner"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing eh4t. Donec
@@ -25,12 +27,14 @@ function Services() {
           non imperdiet."
       />
       <Card
+        className="services-card"
         imgUrl={questionMark}
         title="Konsultation"
         description="Donec ut faucibus ipsum, a accumsan erat. In nec molh4s
           magna, et ultricies erat."
       />
       <Card
+        className="services-card"
         imgUrl={wateringCan}
         title="Skötselråd"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing eh4t. Donec

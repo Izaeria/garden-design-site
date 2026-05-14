@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 interface CardProps {
+  className?: string;
   imgUrl?: string;
   title: string;
   subtitle?: string;
@@ -10,6 +11,7 @@ interface CardProps {
 }
 
 function Card({
+  className,
   imgUrl,
   title,
   subtitle,
@@ -18,7 +20,7 @@ function Card({
   url,
 }: CardProps) {
   return (
-    <div className="card">
+    <div className={`card ${className ?? ""}`}>
       <img src={imgUrl} className="card-image" alt="" />
       <div className="card-content">
         <h2 className="card-title">{title}</h2>
