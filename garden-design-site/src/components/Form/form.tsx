@@ -67,7 +67,9 @@ function Form() {
       }
     } catch (error) {
       console.error(error);
-      setResult("Problem med att skicka meddelande.");
+      setResult(
+        "Problem med att skicka meddelande. Testa att skicka ett mail till Hej@gronarum.se",
+      );
     } finally {
       setStatus("idle");
     }
