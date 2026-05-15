@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import greenLogo from "../../assets/greenLogo.png";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
 
@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo-link">
-        <img src={logo} alt="Logotyp" className="navbar-logo" />
+        <img src={greenLogo} alt="Logotyp" className="navbar-logo" />
       </Link>
       <button className="navbar-toggle" onClick={() => setIsOpen(!isOpen)}>
         ☰
