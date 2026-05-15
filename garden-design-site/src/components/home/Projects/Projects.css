@@ -1,5 +1,8 @@
 .projects {
   background-color: #faf8f2;
+  padding-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
 }
 
 .projects-wrapper {
@@ -90,6 +93,7 @@
 @media (min-width: 768px) {
   .projects {
     background-color: #fff;
+    border: none;
   }
 
   .projects-grid {
@@ -127,8 +131,8 @@
   }
 
   .projects-title {
-    margin: 2rem 0;
-    font-size: 1.5rem;
+    margin: 0rem 0 2rem;
+    font-size: 1rem;
   }
 
   .projects-card {
@@ -140,7 +144,9 @@
   }
 
   .projects-card .card-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-bottom: 1rem;
   }
 
   .projects-card .card-link {
