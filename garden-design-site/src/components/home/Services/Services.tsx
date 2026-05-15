@@ -9,38 +9,33 @@ function Services() {
   return (
     <section id="services" className="services">
       <h3 className="services-title">Tjänster</h3>
-      <h2 className="services-subtitle">Detta kan jag hjälpa dig med</h2>
-      <Card
-        className="services-card"
-        imgUrl={tree}
-        title="Trädgårdsdesign"
-        description="  Lorem ipsum dolor sit amet, consectetur adipiscing eh4t. Donec
-            fermentum imperdiet augue a scelerisque. Fusce sagittis ultrices
-            eh4t non imperdiet. "
-      />
-      <Card
-        className="services-card"
-        imgUrl={pottedPlant}
-        title="Planteringsplaner"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing eh4t. Donec
-          fermentum imperdiet augue a scelerisque. Fusce sagittis ultrices eh4t
-          non imperdiet."
-      />
-      <Card
-        className="services-card"
-        imgUrl={questionMark}
-        title="Konsultation"
-        description="Donec ut faucibus ipsum, a accumsan erat. In nec molh4s
-          magna, et ultricies erat."
-      />
-      <Card
-        className="services-card"
-        imgUrl={wateringCan}
-        title="Skötselråd"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing eh4t. Donec
-          fermentum imperdiet augue a scelerisque. Fusce sagittis ultrices eh4t
-          non imperdiet."
-      />
+      <h2 className="services-subtitle">Det här kan jag hjälpa dig med</h2>
+      <div className="services-grid">
+        <Card
+          className="services-card"
+          imgUrl={tree}
+          title="Trädgårdsdesign"
+          description="Helhetslösningar för din trädgård från idé till färdig plan."
+        />
+        <Card
+          className="services-card"
+          imgUrl={pottedPlant}
+          title="Planteringsplaner"
+          description="Växtförslag som passar din plats och dina önskemål"
+        />
+        <Card
+          className="services-card"
+          imgUrl={questionMark}
+          title="Konsultation"
+          description="Tips och vägledning för att utveckla din trädgård."
+        />
+        <Card
+          className="services-card"
+          imgUrl={wateringCan}
+          title="Skötselråd"
+          description="Skötselråd för att få din trädgård att blomstra."
+        />
+      </div>
     </section>
   );
 }
