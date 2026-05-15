@@ -24,8 +24,8 @@ function Card({
       <img src={imgUrl} className="card-image" alt="" />
       <div className="card-content">
         <h2 className="card-title">{title}</h2>
-        <h3 className="card-subtitle">{subtitle}</h3>
-        <p className="card-description">{description}</p>
+        {subtitle && <h3 className="card-subtitle">{subtitle}</h3>}
+        {description && <p className="card-description">{description}</p>}
         {url && linkText && (
           <Link className="card-link" to={url}>
             {linkText}
