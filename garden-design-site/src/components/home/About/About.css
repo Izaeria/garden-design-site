@@ -1,0 +1,121 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #faf8f2;
+  margin: 0;
+  padding: 0;
+}
+
+.about-image-wrapper {
+  padding: 0 0 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  margin: 0 2rem;
+}
+
+.profile-image {
+  display: block;
+  max-height: 30dvh;
+  width: auto;
+  border-radius: 12px;
+  margin: 2rem 1.5rem 0rem 0rem;
+  float: left;
+}
+
+.about-label {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Cantarell", sans-serif;
+  padding-top: 2rem;
+}
+
+.about-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.about-text-top {
+  font-family: "Cantarell", sans-serif;
+}
+
+.about-text-bottom {
+  font-family: "Cantarell", sans-serif;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.9rem 0rem;
+  color: #7c935d;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Cantarell", sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.about-button:hover {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.about-leaf-image {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 10fr 0.5fr;
+    padding: 2rem 0 2rem;
+  }
+
+  .profile-image {
+    max-height: 300px;
+    width: auto;
+    padding: 0;
+    border-radius: 6%;
+  }
+
+  .about-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    margin-top: 1rem;
+  }
+
+  .about-content {
+    align-self: start;
+  }
+
+  .about-leaf-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    display: grid;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .about-content {
+    margin: 0 0rem 0 5rem;
+  }
+
+  .about-leaf-image {
+    display: block;
+    max-height: 300px;
+    width: auto;
+    padding: 0;
+    margin-top: 1.5rem;
+    border-radius: 6%;
+  }
+}

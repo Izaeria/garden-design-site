@@ -1,0 +1,138 @@
+.services {
+  background-color: #faf8f2;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: none;
+  border-radius: 8px;
+}
+
+.services-title {
+  text-align: start;
+  margin: 0 2rem 0.5rem;
+  padding-top: 2rem;
+  font-family: "Cantarell", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgb(117, 112, 112);
+}
+
+.services-subtitle {
+  text-align: start;
+  margin: 0 2rem 2.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: start;
+  gap: 1rem;
+  margin: 0 1rem 2rem;
+}
+
+.services-card .card-content {
+  display: block;
+  padding: 0;
+}
+
+.services-card .card-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-left: 0.7rem;
+}
+
+.services-card .card-title {
+  margin: 0 0 0.15rem;
+  font-family: "Cantarell", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.services-card .card-description {
+  margin: 0 1rem 0 0;
+  font-family: "Cantarell", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgb(117, 112, 112);
+}
+
+@media (min-width: 768px) {
+  .services {
+    border: none;
+    padding-bottom: 1rem;
+  }
+
+  .services-title {
+    text-align: center;
+  }
+
+  .services-subtitle {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .services-grid {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .services-card {
+    display: block;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .services-card:nth-child(-n + 3)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: -1rem;
+    width: 1px;
+    height: 70%;
+    background-color: #dbe1d2;
+  }
+
+  .services-card .card-image {
+    width: 100%;
+    height: 100px;
+    margin: 0 0 1rem;
+  }
+
+  .services-card .card-description {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    padding-bottom: 1rem;
+  }
+
+  .services-grid {
+    margin: 0 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    padding-bottom: 3rem;
+  }
+  .services-grid {
+    margin: 0 4rem;
+  }
+
+  .services-card .card-description {
+    margin: 0 auto;
+    max-width: 18rem;
+  }
+}
