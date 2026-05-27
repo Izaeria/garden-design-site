@@ -119,3 +119,44 @@
     border-radius: 6%;
   }
 }
+@media (min-width: 1600px) {
+  .about {
+    padding: 4rem 2rem 6rem;
+  }
+
+  .about-content {
+    margin: 0 0rem 0 7rem;
+  }
+
+  .profile-image {
+    max-height: 520px;
+    border-radius: 20px;
+    margin: 3rem 3rem 0 0;
+  }
+
+  .about-label {
+    padding-top: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+  }
+
+  .about-title {
+    font-size: 4.5rem;
+    line-height: 1.5;
+  }
+
+  .about-text-top,
+  .about-text-bottom {
+    font-size: 1.4rem;
+    line-height: 1.9;
+  }
+
+  .about-button {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+
+  .about-leaf-image {
+    max-height: 420px;
+  }
+}
