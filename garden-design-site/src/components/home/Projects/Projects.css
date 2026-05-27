@@ -168,3 +168,33 @@
     height: 360px;
   }
 }
+
+@media (min-width: 1600px) {
+  .projects-card {
+    min-height: 500px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-card .card-image {
+    height: 500px;
+  }
+
+  .projects-card .card-title {
+    font-size: 2rem;
+  }
+
+  .projects-card .card-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .projects-card .card-link {
+    font-size: 1.5rem;
+  }
+
+  .projects-card .card-content {
+    padding: 2rem;
+  }
+}
