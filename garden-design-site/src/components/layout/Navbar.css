@@ -110,7 +110,7 @@
   width: 100%;
   justify-content: center;
 
-  border: 1px solid #464934;
+  border: 2px solid #464934;
   background-color: #464934;
 
   color: #faf8f2;
@@ -125,14 +125,17 @@
     border-color 0.2s ease;
 
   cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
 }
 
 .navbar-cta-button:hover,
 .navbar-cta-button:focus-visible {
   background-color: #faf8f2;
   color: #63754b;
-  border-color: #464934;
-  transform: translateY(-1px);
+  border-color: #63754b;
+  transform: scale(0.97);
 }
 
 @media (min-width: 1024px) {
@@ -184,7 +187,7 @@
 
 @media (min-width: 1600px) {
   .navbar {
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 1.5rem;
   }
 
   .navbar-logo {
@@ -197,7 +200,7 @@
 
   .navbar-links a {
     padding: 0.8rem 1.1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .navbar-cta {
@@ -206,6 +209,6 @@
 
   .navbar-cta-button {
     padding: 0.9rem 1.4rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

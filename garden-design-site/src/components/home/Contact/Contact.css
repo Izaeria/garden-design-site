@@ -1,9 +1,7 @@
 .contact-wrapper {
-  background-color: #42482f;
+  background-color: #454933;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
   padding-bottom: 2rem;
 }
 
