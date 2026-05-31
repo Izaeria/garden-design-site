@@ -197,7 +197,7 @@
 
   .navbar-links a {
     padding: 0.8rem 1.1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .navbar-cta {
@@ -206,6 +206,6 @@
 
   .navbar-cta-button {
     padding: 0.9rem 1.4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }

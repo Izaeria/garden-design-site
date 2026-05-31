@@ -7,9 +7,6 @@
   padding-bottom: 2rem;
 }
 
-.contact-info {
-}
-
 .contact-title {
   text-align: start;
   margin: 0 2rem 0.5rem;
@@ -128,31 +125,7 @@
   border: 1px solid #556b2f;
 }
 
-.contact-form-result {
-}
-
 @media (min-width: 768px) {
-  .contact-info {
-  }
-
-  .contact-title {
-  }
-
-  .contact-cta {
-  }
-
-  .contact-subtitle {
-  }
-
-  .contact-details {
-  }
-
-  .contact-form-section {
-  }
-
-  .contact-form {
-  }
-
   .contact-form button:hover {
     background-color: #fff;
     color: #556b2f;
@@ -249,5 +222,64 @@
     padding: 1.2rem;
     font-size: 1rem;
     letter-spacing: 0.08rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact-info {
+    padding: 6rem 12rem;
+  }
+
+  .contact-form-section {
+    padding: 6rem 6rem;
+  }
+
+  .contact-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-cta {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 40ch;
+  }
+
+  .contact-details {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+
+  .contact-detail {
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-form {
+    max-width: 700px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  .contact-form textarea {
+    min-height: 280px;
+  }
+
+  .contact-form button {
+    padding: 1.4rem;
+    font-size: 1.2rem;
   }
 }

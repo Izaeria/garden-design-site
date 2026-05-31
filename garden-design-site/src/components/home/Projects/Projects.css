@@ -16,6 +16,7 @@
   font-family: "Cantarell", sans-serif;
   font-size: 0.8rem;
   text-transform: uppercase;
+  color: rgb(117, 112, 112);
 }
 
 .projects-grid {
@@ -136,13 +137,14 @@
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    margin: 0 10rem;
+    margin: 0 5rem;
     gap: 2rem;
   }
 
   .projects-title {
     margin: 0rem 0 2rem;
     font-size: 1rem;
+    letter-spacing: 0.2rem;
   }
 
   .projects-card {
@@ -166,5 +168,35 @@
 
   .projects-card .card-image {
     height: 360px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .projects-card {
+    min-height: 500px;
+  }
+
+  .projects-title {
+    font-size: 1.5rem;
+  }
+
+  .projects-card .card-image {
+    height: 500px;
+  }
+
+  .projects-card .card-title {
+    font-size: 2rem;
+  }
+
+  .projects-card .card-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .projects-card .card-link {
+    font-size: 1.2rem;
+  }
+
+  .projects-card .card-content {
+    padding: 2rem;
   }
 }
