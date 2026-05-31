@@ -136,3 +136,44 @@
     max-width: 18rem;
   }
 }
+
+@media (min-width: 1600px) {
+  .services {
+    padding-bottom: 4rem;
+  }
+
+  .services-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .services-subtitle {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .services-grid {
+    margin: 0 8rem;
+    gap: 3rem;
+  }
+
+  .services-card .card-image {
+    height: 140px;
+    margin-bottom: 1.5rem;
+  }
+
+  .services-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .services-card .card-description {
+    max-width: 22rem;
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  .services-card:nth-child(-n + 3)::after {
+    right: -1.5rem;
+  }
+}
