@@ -32,6 +32,7 @@
   font-weight: 600;
   font-family: "Cantarell", sans-serif;
   padding-top: 2rem;
+  color: rgb(117, 112, 112);
 }
 
 .about-title {
@@ -129,30 +130,30 @@
   }
 
   .profile-image {
-    max-height: 520px;
+    max-height: 480px;
     border-radius: 20px;
     margin: 3rem 3rem 0 0;
   }
 
   .about-label {
     padding-top: 3rem;
-    font-size: 2rem;
-    letter-spacing: 0.08em;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
   }
 
   .about-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1.5;
   }
 
   .about-text-top,
   .about-text-bottom {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.9;
   }
 
   .about-button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
   }
 

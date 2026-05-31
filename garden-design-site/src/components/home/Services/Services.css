@@ -115,20 +115,14 @@
 
 @media (min-width: 1024px) {
   .services {
-    padding-bottom: 1rem;
-  }
-
-  .services-grid {
-    margin: 0 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .services {
     padding-bottom: 3rem;
   }
   .services-grid {
     margin: 0 4rem;
+  }
+
+  .services-title {
+    letter-spacing: 0.2rem;
   }
 
   .services-card .card-description {
@@ -148,7 +142,7 @@
   }
 
   .services-subtitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
   }
 
@@ -163,13 +157,13 @@
   }
 
   .services-card .card-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0.75rem;
   }
 
   .services-card .card-description {
     max-width: 22rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.7;
   }
 

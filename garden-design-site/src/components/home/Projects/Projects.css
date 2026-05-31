@@ -16,6 +16,7 @@
   font-family: "Cantarell", sans-serif;
   font-size: 0.8rem;
   text-transform: uppercase;
+  color: rgb(117, 112, 112);
 }
 
 .projects-grid {
@@ -136,13 +137,14 @@
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    margin: 0 10rem;
+    margin: 0 5rem;
     gap: 2rem;
   }
 
   .projects-title {
     margin: 0rem 0 2rem;
     font-size: 1rem;
+    letter-spacing: 0.2rem;
   }
 
   .projects-card {
@@ -175,7 +177,7 @@
   }
 
   .projects-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .projects-card .card-image {
@@ -187,11 +189,11 @@
   }
 
   .projects-card .card-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .projects-card .card-link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .projects-card .card-content {
