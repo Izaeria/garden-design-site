@@ -1,39 +1,53 @@
 import { Link } from "react-router-dom";
+import { projects } from "../../data/projects";
+import "./ProjectsPage.css";
 
 function ProjectsPage() {
   return (
-    <>
-      <section>
-        <h1>Projekt</h1>
-        <p>Här hittar du ett urval av tidigare arbeten och inspiration.</p>
-      </section>
-
-      <ul>
-        <li>
-          <h2> Privat trädgård i Göteborg</h2>
-          <p>
-            En lugn och grön oas med fokus på perenner och naturliga material.
+    <main className="projects-page">
+      <div className="container">
+        <section className="projects-page-header">
+          <h1 className="projects-page-title">
+            Utvalda trädgårdsprojekt och designförslag
+          </h1>
+          <p className="projects-page-description">
+            Här visas ett urval av trädgårdsprojekt, illustrationsplaner och
+            skissförslag.
           </p>
-          <Link to="/projekt">Läs mer</Link>
-        </li>
-      </ul>
+        </section>
 
-      <ul>
-        <li>
-          <h2>Modern villaträdgård</h2>
-          <p> Strukturerad design med tydliga linjer och lättskötta ytor.</p>
-          <Link to="/projekt">Läs mer</Link>
-        </li>
-      </ul>
+        <section className="projects-page-grid">
+          {projects.map((project) => (
+            <article className="projects-page-card" key={project.id}>
+              <div className="projects-page-card-image-wrapper">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="projects-page-card-image"
+                />
+              </div>
 
-      <ul>
-        <li>
-          <h2>Året runt-grönt</h2>
-          <p>Trädgård som håller formen även vintertid.</p>
-          <Link to="/projekt">Läs mer</Link>
-        </li>
-      </ul>
-    </>
+              <div className="projects-page-card-content">
+                <p className="projects-page-card-category">
+                  {project.category}
+                </p>
+
+                <h2>{project.title}</h2>
+                <p>{project.shortDescription}</p>
+
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="projects-page-card-link"
+                >
+                  Visa projekt →
+                </Link>
+              </div>
+            </article>
+          ))}
+        </section>
+      </div>
+    </main>
   );
 }
+
 export default ProjectsPage;
