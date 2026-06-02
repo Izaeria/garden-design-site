@@ -1,35 +1,55 @@
+import Form from "../components/Form/form";
+import "./ContactPage.css";
+
+import Mail from "../assets/ContactImages/mail.svg?react";
+import Phone from "../assets/ContactImages/phone.svg?react";
+import Location from "../assets/ContactImages/location.svg?react";
+
 function ContactPage() {
   return (
-    <>
-      <section>
-        <h1>Kontakt</h1>
-        <p>
-          Redo att förverkliga din trädgård? Skicka ett meddelande så hör jag av
-          mig!
-        </p>
-      </section>
+    <main className="contact-page">
+      <div className="container">
+        <section className="contact-page-wrapper">
+          <section className="contact-page-info">
+            <h1 className="contact-page-title">Skicka en förfrågan</h1>
 
-      <section>
-        <h2>Kontaktuppgifter</h2>
-        <p>Email: ...</p>
-        <p>Telefon: ...</p>
-      </section>
+            <p className="contact-page-description">
+              Är du redo att skapa en trädgård som passar både platsen och dina
+              behov?
+            </p>
 
-      <section>
-        <form>
-          <label>Namn</label>
-          <input type="text" />
+            <p className="contact-page-description">
+              Jag återkommer vanligtvis inom 1–2 arbetsdagar. Därefter bokar vi
+              ett första samtal där vi går igenom dina önskemål, platsens
+              förutsättningar och hur jag kan hjälpa dig vidare.
+            </p>
 
-          <label>Email</label>
-          <input type="email" />
+            <div className="contact-page-details">
+              <div className="contact-page-detail">
+                <Mail className="contact-page-icon" />
+                <p className="contact-page-detail-text">hej@gronarum.se</p>
+              </div>
 
-          <label>Meddelande</label>
-          <textarea />
+              <div className="contact-page-detail">
+                <Phone className="contact-page-icon" />
+                <p className="contact-page-detail-text">070-000 00 00</p>
+              </div>
 
-          <button>Skicka</button>
-        </form>
-      </section>
-    </>
+              <div className="contact-page-detail">
+                <Location className="contact-page-icon" />
+                <p className="contact-page-detail-text">Svedala med omnejd</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="kontaktPage" className="contact-page-form-section">
+            <div className="contact-page-form">
+              <Form />
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
   );
 }
 
