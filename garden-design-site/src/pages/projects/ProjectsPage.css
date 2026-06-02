@@ -1,0 +1,209 @@
+.projects-page {
+  background-color: #faf8f2;
+  color: #222;
+  padding-bottom: 6rem;
+}
+
+.projects-page-wrapper {
+  padding: 3rem 0 6rem;
+}
+
+.projects-page-header {
+  margin-bottom: 3rem;
+}
+
+.projects-page-label {
+  margin: 0 0 1rem;
+  font-family: "Cantarell", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #454933;
+}
+
+.projects-page-title {
+  margin: 2rem 0 2rem;
+  max-width: 850px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.projects-page-description {
+  margin: 0;
+  max-width: 60ch;
+  font-family: "Cantarell", sans-serif;
+  line-height: 1.8;
+  color: #4f4f4f;
+}
+
+.projects-page-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.projects-page-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid rgba(66, 72, 47, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.projects-page-card-image-wrapper {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.projects-page-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.projects-page-card:hover .projects-page-card-image {
+  transform: scale(1.04);
+}
+
+.projects-page-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.projects-page-card-category {
+  margin: 0 0 1rem;
+  font-family: "Cantarell", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  color: #454933;
+}
+
+.projects-page-card-content h2 {
+  margin: 0 0 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  line-height: 1.1;
+
+  min-height: 4.4rem;
+}
+
+.projects-page-card-description {
+  margin: 0;
+  font-family: "Cantarell", sans-serif;
+  line-height: 1.7;
+  color: #4f4f4f;
+
+  flex: 1;
+}
+
+.projects-page-card-link {
+  margin-top: 1.5rem;
+
+  font-family: "Cantarell", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+  color: #454933;
+  text-decoration: none;
+}
+
+.projects-page-card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .projects-page-wrapper {
+    padding: 4rem 0 7rem;
+  }
+
+  .projects-page-title {
+    font-size: 3.5rem;
+  }
+
+  .projects-page-description {
+    font-size: 1.1rem;
+  }
+
+  .projects-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-page-card-image-wrapper {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-page-wrapper {
+    padding: 5rem 0 8rem;
+  }
+
+  .projects-page-header {
+    margin-bottom: 4rem;
+  }
+
+  .projects-page-grid {
+    gap: 3rem;
+  }
+
+  .projects-page-card {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .projects-page-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(66, 72, 47, 0.12);
+  }
+
+  .projects-page-card-image-wrapper {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .projects-page-wrapper {
+    padding: 6rem 0 10rem;
+  }
+
+  .projects-page-title {
+    font-size: 5rem;
+  }
+
+  .projects-page-label {
+    font-size: 1.1rem;
+  }
+
+  .projects-page-description {
+    font-size: 1.2rem;
+    line-height: 1.9;
+  }
+
+  .projects-page-grid {
+    max-width: 1400px;
+  }
+
+  .projects-page-card-image-wrapper {
+    height: 340px;
+  }
+
+  .projects-page-card-content {
+    padding: 2rem;
+  }
+}
