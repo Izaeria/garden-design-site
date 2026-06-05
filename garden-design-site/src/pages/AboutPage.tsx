@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./AboutPage.css";
 import profileImg from "../assets/profile.jpeg";
-import gardenImg from "../assets/AboutPageImages/gardenImage.png";
+import gardenImg from "../assets/AboutPageImages/gardenImage.webp";
 
 function AboutPage() {
   return (

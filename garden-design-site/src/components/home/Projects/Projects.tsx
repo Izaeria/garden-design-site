@@ -1,9 +1,9 @@
 import "./Projects.css";
 import Card from "../../Card/Card";
-import project1 from "../../../assets/ProjectsImages/project1.jpeg";
-import project2 from "../../../assets/ProjectsImages/project2.jpeg";
-import project3 from "../../../assets/ProjectsImages/project3.jpeg";
-import project5 from "../../../assets/ProjectsImages/project5.jpeg";
+import project1 from "../../../assets/ProjectsImages/project1.webp";
+import project2 from "../../../assets/ProjectsImages/project2.webp";
+import project3 from "../../../assets/ProjectsImages/project3.webp";
+import project5 from "../../../assets/ProjectsImages/project5.webp";
 
 function Projects() {
   return (

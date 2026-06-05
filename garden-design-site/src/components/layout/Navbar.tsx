@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import greenLogo from "../../assets/greenLogo.png";
+import greenLogo from "../../assets/greenLogo.webp";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
 
