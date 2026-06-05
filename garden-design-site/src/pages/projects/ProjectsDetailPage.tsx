@@ -26,7 +26,6 @@ function ProjectDetailPage() {
       <div className="container">
         <section className="project-detail-hero">
           <div className="project-detail-hero-text">
-            <p className="project-detail-label">Projekt</p>
             <h1>{project.title}</h1>
 
             <p className="project-detail-location">

@@ -9,18 +9,9 @@
   padding: 3rem 0 4rem;
 }
 
-.contact-page-label {
-  margin: 0 0 1rem;
-  font-family: "Cantarell", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  color: #454933;
-}
-
 .contact-page-title {
-  margin: 0 0 2rem;
+  margin: 0 0 2.5rem;
+
   font-family: "Cormorant Garamond", serif;
   font-size: 2.4rem;
   font-weight: 600;
@@ -28,16 +19,19 @@
 }
 
 .contact-page-description {
-  margin: 0 0 0.6rem;
+  margin: 2rem 0;
+
   font-family: "Cantarell", sans-serif;
   font-size: 1rem;
   line-height: 1.8;
+
   color: #4f4f4f;
 }
 
 .contact-page-details {
   display: grid;
   gap: 1.5rem;
+
   margin-top: 3rem;
 }
 
@@ -50,19 +44,23 @@
 .contact-page-icon {
   width: 32px;
   height: 32px;
+
   color: #454933;
   flex-shrink: 0;
 }
 
 .contact-page-detail-text {
   margin: 0;
+
   font-family: "Cantarell", sans-serif;
   color: #4f4f4f;
 }
 
 .contact-page-form-section {
   background-color: #fff;
+
   padding: 2rem;
+
   border-radius: 8px;
   border: 1px solid rgba(66, 72, 47, 0.12);
 }
@@ -73,7 +71,7 @@
 
 @media (min-width: 768px) {
   .contact-page-wrapper {
-    padding: 4rem 0 5rem;
+    padding: 3rem 0 5rem;
   }
 
   .contact-page-title {
@@ -95,17 +93,20 @@
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: start;
-    padding: 5rem 0 6rem;
+
+    padding: 3rem 0 6rem;
   }
 
   .contact-page-info {
     padding-right: 4rem;
+
     border-right: 1px solid #ededed;
   }
 
   .contact-page-form-section {
     background-color: transparent;
     border: none;
+
     padding: 0;
   }
 }
@@ -113,15 +114,12 @@
 @media (min-width: 1600px) {
   .contact-page-wrapper {
     gap: 6rem;
-    padding: 6rem 0 7rem;
+
+    padding: 4rem 0 7rem;
   }
 
   .contact-page-title {
     font-size: 5rem;
-  }
-
-  .contact-page-label {
-    font-size: 1.1rem;
   }
 
   .contact-page-description,

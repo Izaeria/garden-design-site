@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ServicesPage.css";
 
+import servicesImage from "../assets//ServicesImages/illustrationplaceholder.png";
 import pottedPlant from "../assets/ServicesImages/plant.svg";
 import tree from "../assets/ServicesImages/tree.svg";
 import wateringCan from "../assets/ServicesImages/watering-can.svg";
@@ -11,14 +12,22 @@ function ServicesPage() {
     <main className="services-page">
       <div className="container">
         <section className="services-page-intro">
-          <h1 className="services-page-title">
-            Trädgårdstjänster för en genomtänkt utemiljö
-          </h1>
+          <div className="services-page-intro-text">
+            <h1 className="services-page-title">
+              Trädgårdstjänster för en genomtänkt utemiljö
+            </h1>
 
-          <p className="services-page-description">
-            Jag hjälper dig att skapa en trädgård som känns harmonisk, hållbar
-            och anpassad efter både platsen och dina behov.
-          </p>
+            <p className="services-page-description">
+              Jag hjälper dig att skapa en trädgård som känns harmonisk, hållbar
+              och anpassad efter både platsen och dina behov.
+            </p>
+          </div>
+
+          <img
+            src={servicesImage}
+            alt="Planteringsplan och trädgårdsskiss"
+            className="services-page-image"
+          />
         </section>
 
         <section className="services-page-list">
