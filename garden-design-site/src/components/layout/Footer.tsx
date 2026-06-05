@@ -51,9 +51,13 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <a className="footer-top-link" href="#top">
+        <button
+          className="footer-top-link"
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           ↑ Tillbaka till toppen
-        </a>
+        </button>
         <p>© 2026 Gröna Rum</p>
       </div>
     </footer>

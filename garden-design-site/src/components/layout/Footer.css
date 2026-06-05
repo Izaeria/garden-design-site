@@ -78,13 +78,18 @@
 }
 
 .footer-top-link {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+
   text-transform: uppercase;
   width: fit-content;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   padding: 0.75rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   text-decoration: none;
 }
