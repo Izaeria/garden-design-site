@@ -1,5 +1,6 @@
 import "./Footer.css";
 import whiteLogo from "../../assets/whiteLogo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -18,19 +19,19 @@ function Footer() {
 
             <ul className="footer-list">
               <li>
-                <a href="/">Hem</a>
+                <Link to="/">Hem</Link>
               </li>
               <li>
-                <a href="/om">Om Mig</a>
+                <Link to="/om">Om Mig</Link>
               </li>
               <li>
-                <a href="/tjanster">Tjänster</a>
+                <Link to="/tjanster">Tjänster</Link>
               </li>
               <li>
-                <a href="/projekt">Projekt</a>
+                <Link to="/projekt">Projekt</Link>
               </li>
               <li>
-                <a href="/kontakt">Kontakt</a>
+                <Link to="/kontakt">Kontakt</Link>
               </li>
             </ul>
           </nav>
@@ -39,7 +40,7 @@ function Footer() {
             <h3 className="footer-heading">Kontakt</h3>
 
             <address className="footer-address">
-              <a href="mailto:hej@greengarden.se">hej@gronarum.se</a>
+              <a href="mailto:hej@gronarum.se">hej@gronarum.se</a>
 
               <a href="tel:+46123456789">+46 123 456 789</a>
 
@@ -58,4 +59,5 @@ function Footer() {
     </footer>
   );
 }
+
 export default Footer;
