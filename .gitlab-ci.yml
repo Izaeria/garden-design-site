@@ -1,0 +1,15 @@
+image: node:20
+
+pages:
+  script:
+    - cd garden-design-site
+    - npm ci
+    - npm run build
+    - cd ..
+    - rm -rf public
+    - mv garden-design-site/dist public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
