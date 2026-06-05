@@ -136,11 +136,10 @@
   .project-detail-hero {
     grid-template-columns: 0.9fr 1.1fr;
     align-items: end;
-    padding-top: 5rem;
   }
 
   .project-detail-hero-text {
-    padding: 3rem 3rem 3rem 0;
+    padding: 0rem 3rem 3rem 0;
   }
 
   .project-detail-hero-text h1 {

@@ -4,7 +4,7 @@
 }
 
 .about-page-intro {
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 0 2rem;
 }
 
 .about-page-img {
@@ -22,7 +22,7 @@
 .about-page-title {
   font-size: 2.4rem;
   line-height: 1.05;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .about-page-card-title,
@@ -34,7 +34,7 @@
 .about-page-description,
 .about-page-card-text,
 .about-page-cta-text {
-  margin: 0;
+  margin: 2rem 0;
   font-family: "Cantarell", sans-serif;
   font-size: 1rem;
   line-height: 1.8;
@@ -46,11 +46,13 @@
 }
 
 .about-profile-image {
-  display: block;
+  aspect-ratio: 1 / 1;
   width: 100%;
   max-width: 320px;
-  margin: 2rem auto;
-  border-radius: 12px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
 }
 
 .about-garden-image {
@@ -60,7 +62,7 @@
 .about-page-sections {
   display: grid;
   gap: 1rem;
-  padding: 0 2rem 3rem;
+  padding-bottom: 3rem;
 }
 
 .about-page-card {
@@ -69,7 +71,7 @@
 }
 
 .about-page-cta {
-  margin: 0 2rem 4rem;
+  margin-bottom: 4rem;
   padding: 2rem;
   background-color: #454933;
   color: #f4f1e8;
@@ -89,21 +91,16 @@
   display: inline-flex;
   align-items: center;
   width: fit-content;
-
   padding: 0.85rem 1.2rem;
-
   border: 1px solid #f4f1e8;
   border-radius: 999px;
-
   color: #f4f1e8;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-
   font-family: "Cantarell", sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
-
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
@@ -116,27 +113,24 @@
   color: #454933;
   transform: translateY(-1px);
 }
-
 @media (min-width: 768px) {
-  .about-page-intro {
-    padding: 4rem 4rem 3rem;
-  }
-
   .about-page-img {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 2rem;
-    align-items: center;
-    text-align: left;
+    grid-template-columns: minmax(0, 1fr) 180px;
+    gap: 1.5rem;
+    align-items: start;
   }
-
-  .about-profile-image {
-    max-width: 100%;
-    margin: 0;
+  .about-page-intro {
+    padding: 3rem 0 3rem;
   }
 
   .about-page-title {
     font-size: 3.5rem;
+  }
+
+  .about-profile-image {
+    max-width: 260px;
+    margin: 2rem auto;
   }
 
   .about-page-description,
@@ -147,17 +141,17 @@
 
   .about-garden-image {
     display: block;
-    width: calc(100% - 8rem);
+    width: 100%;
     height: 320px;
     object-fit: cover;
-    margin: 0 auto 4rem;
+    margin: 0 0 4rem;
     border-radius: 8px;
   }
 
   .about-page-sections {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 0 4rem 4rem;
+    padding-bottom: 4rem;
   }
 
   .about-page-card {
@@ -167,14 +161,41 @@
   }
 
   .about-page-cta {
-    margin: 0 4rem 5rem;
+    margin-bottom: 5rem;
     padding: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .about-page-img {
-    grid-template-columns: 300px 1fr;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-page-text {
+    max-width: 800px;
+  }
+
+  .about-profile-image {
+    max-width: 300px;
+    margin: 0;
+    justify-self: end;
+  }
+
+  .about-page-title {
+    font-size: 5rem;
+  }
+
+  .about-garden-image {
+    height: 380px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-page-img {
+    grid-template-columns: 1fr 300px;
     gap: 4rem;
   }
 
@@ -183,72 +204,62 @@
   }
 
   .about-garden-image {
-    width: calc(100% - 7rem);
     height: 380px;
-  }
-
-  .about-page-sections {
-    padding-inline: 8rem;
-  }
-
-  .about-page-cta {
-    margin-inline: 8rem;
   }
 }
 
 @media (min-width: 1600px) {
   .about-page-intro {
-    padding: 5rem 12rem 4rem;
+    padding: 4rem 0 4rem;
   }
 
   .about-page-img {
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr 400px;
     gap: 5rem;
   }
 
   .about-profile-image {
-    max-width: 100%;
-    border-radius: 20px;
-  }
+    .about-profile-image {
+      width: 300px;
+      height: 300px;
+    }
 
-  .about-page-title {
-    font-size: 5rem;
-  }
+    .about-page-title {
+      font-size: 5rem;
+    }
 
-  .about-page-card-title,
-  .about-page-cta-title {
-    font-size: 2.4rem;
-  }
+    .about-page-card-title,
+    .about-page-cta-title {
+      font-size: 2.4rem;
+    }
 
-  .about-page-description,
-  .about-page-card-text,
-  .about-page-cta-text {
-    font-size: 1.2rem;
-    line-height: 1.9;
-  }
+    .about-page-description,
+    .about-page-card-text,
+    .about-page-cta-text {
+      font-size: 1.2rem;
+      line-height: 1.9;
+    }
 
-  .about-garden-image {
-    width: calc(100% - 24rem);
-    height: 520px;
-    margin-bottom: 5rem;
-  }
+    .about-garden-image {
+      height: 520px;
+      margin-bottom: 5rem;
+    }
 
-  .about-page-sections {
-    padding-inline: 12rem;
-    gap: 4rem;
-  }
+    .about-page-sections {
+      gap: 4rem;
+    }
 
-  .about-page-card {
-    padding-left: 2rem;
-  }
+    .about-page-card {
+      padding-left: 2rem;
+    }
 
-  .about-page-cta {
-    margin-inline: 12rem;
-    padding: 4rem;
-  }
+    .about-page-cta {
+      padding: 4rem;
+    }
 
-  .about-page-cta-link {
-    font-size: 1rem;
-    padding: 1rem 1.4rem;
+    .about-page-cta-link {
+      font-size: 1rem;
+      padding: 1rem 1.4rem;
+    }
   }
 }
